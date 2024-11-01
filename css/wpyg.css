@@ -1,0 +1,83 @@
+/**
+ * Wp Youtube Gallery
+ * @CSS
+ * */
+.wp_youtube_gallery_block {width:100%; position:relative;}
+.wp_youtube_gallery_block .wp_youtube_gallery .youtubetext iframe {margin-bottom: 2%;padding: 0;position: relative;height:100%;}
+.wp_youtube_gallery_block  .youtubetext .content {width:100%;}
+.wp_youtube_gallery_block  .youtubetext {padding:1% 1% 1% 1%; float:left;}
+.wp_youtube_gallery_block .wp_youtube_gallery tr td{border-top: 1px solid #CC181E;}
+.wp_youtube_gallery_block .wp_youtube_gallery tr td:first-child {padding:1% 1% 1% 0;border-left:none;  }
+.wp_youtube_gallery_block .wp_youtube_gallery tr td:last-child {padding:1% 0 1% 1%;  border-right:none;}
+.wp_youtube_gallery_block .wp_youtube_gallery .youtubetext h3:hover{color:#0093D0; float:left; cursor:pointer}
+.wp_youtube_gallery_block .wp_youtube_gallery .youtubetext h3 {color: #222222;float: left;margin-bottom: 1%;margin-top: 1%;
+padding: 0;width:100%;}
+.wp_youtube_gallery_block .wp_youtube_gallery .youtubetext p{color:#222222;margin: 0%;padding: 0;width:100%;}
+.wp_youtube_gallery_block .wp_youtube_gallery .youtubevideo img {width:auto; height:auto;} 
+/* lightbox layout */
+.wp_youtube_gallery_lightbox {width:100%;float:left;padding:5px 0 5px 0;}
+.wp_youtube_gallery_lightbox .wp_youtube_gallery_post {float:left;margin:2%;border-bottom:1px dashed #cc181e;position:relative;}
+.wp_youtube_gallery_lightbox .wp_youtube_gallery_post .youtubecontent{font-size:12px; background:#ccc;padding:1% 2% 0}
+.wp_youtube_gallery_lightbox .wp_youtube_gallery_post .playbutton {
+    background: url("../images/yt-play-icon.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    display: block;
+    margin: -50% 0 0 -10px;
+    padding: 3%;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.wp_youtube_gallery_lightbox .wp_youtube_gallery_post img {padding: inherit;width: 100%;}
+.wp_youtube_gallery_lightbox .wp_youtube_gallery_post .playbutton:hover{
+    background: url("../images/yt-play-icon-hover.png") no-repeat scroll center center rgba(0, 0, 0, 0);}
+.youtube.cboxElement {
+    display: inline-block;
+    width: 100%;
+}
+.wyg_nolightbox .wp_youtube_gallery_post {border-bottom: 1px dashed #cc181e; float: left;margin: 2%;}
+.wyg_nolightbox .wp_youtube_gallery_post iframe {margin:0;}
+.wyg_css .wp_youtube_gallery_post .videotitle{font-weight:bold;font-size:14px;}
+.wyg_css .wp_youtube_gallery_post iframe {min-height:220px;}
+@media (max-width:500px) {
+#colorbox ,#cboxContent,#cboxWrapper {font-size: 12px;
+    height: 400px !important;
+    width: 270px !important;}
+#colorbox {left:10px !important;top:40px !important;}
+#cboxLoadedContent {margin-bottom:10px !important;height:350px !important;width: 270px !important;}
+#colorbox #cboxContent #cboxClose {
+    bottom: 4px;
+    float: right;
+    height: 25px;
+    left: 0;
+    position: relative;
+    text-indent: -9999px;
+    width: 25px;
+    z-index: 99999;
+}
+#colorbox #cboxContent #cboxTitle {position:relative;bottom:inherit !important;}
+.wp_youtube_gallery_lightbox .wp_youtube_gallery_post .youtubecontent {min-height:80px; max-height:120px;}
+.wyg_css .wp_youtube_gallery_post {width: 96%;}
+}
+@media (max-width:800px) and (min-width:501px) {
+.wp_youtube_gallery_lightbox .wp_youtube_gallery_post .youtubecontent {min-height:80px; max-height:120px;}
+.wyg_css .wp_youtube_gallery_post {width: 46%;}
+}
+@media (max-width:2200px) and (min-width:801px) {
+.wp_youtube_gallery_lightbox .wp_youtube_gallery_post .youtubecontent {min-height:80px; max-height:120px;}
+.wyg_css .wp_youtube_gallery_post {width: 46%;}
+}
+.youtubecontent .wpyg-showmore-content.divshow {display:inline;}
+.youtubecontent .wpyg-showmore-content.divhide {display:none;}
+.youtubecontent  a.wpyg-showmore, .youtubecontent  a.wpyg-showless {
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+}
+.youtubecontent  a.wpyg-showhide {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+    padding-left: 10px;border: none;
+    box-shadow: none;
+}
